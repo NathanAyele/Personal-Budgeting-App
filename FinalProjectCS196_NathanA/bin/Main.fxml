@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="743.0" prefWidth="1415.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="774.0" prefWidth="1042.0" VBox.vgrow="ALWAYS">
+      <children>
+            <VBox layoutX="9.0" layoutY="59.0" prefHeight="477.0" prefWidth="107.0">
+               <children>
+                  <Separator prefHeight="17.0" prefWidth="107.0" />
+                  <Button fx:id="addIncomeButton" mnemonicParsing="false" onAction="#addIncomeButton" prefHeight="48.0" prefWidth="99.0" text="Income" />
+                  <Separator prefHeight="17.0" prefWidth="107.0" />
+                  <Button fx:id="addExpensesButton" mnemonicParsing="false" onAction="#addExpenseButton" prefHeight="48.0" prefWidth="100.0" text="Expenditure" />
+                  <Separator prefHeight="17.0" prefWidth="107.0" />
+                  <Button fx:id="showChartsButton" mnemonicParsing="false" onAction="#showChartsButton" prefHeight="48.0" prefWidth="100.0" text="Charts" />
+                  <Separator prefHeight="17.0" prefWidth="107.0" />
+                  <Button fx:id="someButton" mnemonicParsing="false" onAction="#changePasswordButton" prefHeight="48.0" prefWidth="100.0" text="Change Password" textAlignment="CENTER" wrapText="true" />
+                  <Separator prefHeight="17.0" prefWidth="107.0" />
+               </children>
+            </VBox>
+            <Label layoutX="11.0" layoutY="34.0" prefHeight="18.0" prefWidth="114.0" text="Choose an Option:" />
+            <Label fx:id="Balance" layoutX="154.0" layoutY="9.0" prefHeight="101.0" prefWidth="345.0" text="Balance" textFill="#06b549" wrapText="true">
+               <font>
+                  <Font size="34.0" />
+               </font></Label>
+            <Label fx:id="MS1" layoutX="581.0" layoutY="19.0" prefHeight="84.0" prefWidth="138.0" text="MostSpendC1" textFill="#ffffffc4" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label fx:id="MS2" layoutX="765.0" layoutY="21.0" prefHeight="84.0" prefWidth="146.0" text="MostSpendC2" textFill="#ffffffc4" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <Label fx:id="MS3" layoutX="962.0" layoutY="19.0" prefHeight="84.0" prefWidth="142.0" text="MostSpendC3" textFill="#ffffffc4" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <TableView fx:id="tableofall" layoutX="139.0" layoutY="123.0" prefHeight="578.0" prefWidth="989.0">
+              <columns>
+                <TableColumn fx:id="ColDescription" prefWidth="124.6666259765625" text="Description" />
+                  <TableColumn fx:id="ColCategory" prefWidth="269.73333740234375" text="Category" />
+                  <TableColumn fx:id="ColDate" prefWidth="162.26666259765625" text="Date" />
+                  <TableColumn fx:id="ColAmount" prefWidth="232.933349609375" text="Amount" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Separator layoutX="529.0" layoutY="29.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="8.0" />
+            <Separator layoutX="743.0" layoutY="29.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="8.0" />
+            <Separator layoutX="930.0" layoutY="27.0" orientation="VERTICAL" prefHeight="76.0" prefWidth="8.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1168.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@NathanBudgetImg.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

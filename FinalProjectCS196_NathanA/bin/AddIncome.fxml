@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddIncomeFXMLController">
+   <children>
+      <Button fx:id="closeButton" layoutX="202.0" layoutY="286.0" mnemonicParsing="false" onAction="#onButtonAddClick" prefHeight="40.0" prefWidth="172.0" text="Add to List">
+         <font>
+            <Font name="Centaur" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="72.0" layoutY="180.0" prefHeight="25.0" prefWidth="132.0" text="Category of Income:">
+         <font>
+            <Font name="Centaur" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="93.0" prefHeight="25.0" prefWidth="102.0" text="Description:">
+         <font>
+            <Font name="Centaur" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="136.0" prefHeight="25.0" prefWidth="102.0" text="Date:">
+         <font>
+            <Font name="Centaur" size="17.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Date" layoutX="213.0" layoutY="136.0" promptText="MM/DD/YYYY" />
+      <TextField fx:id="Description" layoutX="213.0" layoutY="93.0" prefHeight="25.0" prefWidth="202.0" promptText="Ex: May Salary" />
+      <Label alignment="CENTER" layoutX="202.0" layoutY="47.0" prefHeight="25.0" prefWidth="196.0" text="Add an Income">
+         <font>
+            <Font name="Centaur" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="224.0" prefHeight="25.0" prefWidth="117.0" text="Amount:">
+         <font>
+            <Font name="Centaur" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Amount" layoutX="213.0" layoutY="224.0" prefHeight="25.0" prefWidth="202.0" />
+      <ChoiceBox fx:id="Category" layoutX="213.0" layoutY="180.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

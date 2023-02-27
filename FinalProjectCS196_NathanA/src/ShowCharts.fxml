@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="787.0" prefWidth="1275.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowChartsFXMLController">
+   <children>
+      <PieChart fx:id="incomePieChart" layoutX="18.0" layoutY="9.0" prefHeight="762.0" prefWidth="612.0" title="Income Pie Chart" />
+      <PieChart fx:id="expensePieChart" layoutX="642.0" layoutY="10.0" prefHeight="764.0" prefWidth="612.0" title="Expenses Pie Chart" />
+   </children>
+</AnchorPane>
