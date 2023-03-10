@@ -15,7 +15,7 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("DarkMode.css").toExternalForm());
-        primaryStage.setTitle("Nathan CS196 Final Project");
+        primaryStage.setTitle("Nathan's Personal Budgeting App");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
