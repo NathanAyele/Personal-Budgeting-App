@@ -2,7 +2,7 @@
   <tr>
     <!-- First Column -->
     <td width="25%">
-      <img src="https://github.com/nta45/Personal-Budgeting-App/assets/96786143/7c1a4fa0-f206-466a-a0a9-19d3b75d822d)" width="200">
+      <img src="https://github.com/nta45/Budget-Ease/assets/96786143/7c1a4fa0-f206-466a-a0a9-19d3b75d822d)" width="200">
     </td>
     
    <td width="100%">
